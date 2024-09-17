@@ -86,6 +86,34 @@ header{
     font-size: 1.2rem;
     font-weight: bold;
 }
+.hero {
+    position: relative; /*reste comme il*/
+    background-image: url(image/banierre.jpg);
+    background-size: cover; /*l'image occupe la grandeur du container*/
+    background-repeat: no-repeat; /*Empeche le background de se repeter*/
+    background-position: center;
+    width: 100%; /*La section occupe,l'espace disponible*/
+    height: 500px; /*La hauteur*/
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.overlay {
+    top: 0; /*Occupe le haut*/
+    left: 0; /*Occupe le gauche*/
+    bottom: 0; /*Occupe le bas*/
+    right: 0; /*Occupe la droite*/
+    position: absolute; /*Ne bouge pas*/
+    background-color: rgb(0, 0, 0, .5);
+}
+
+/*Place le texte en dessus et au milieu*/
+.hero-text {
+    padding: 200px 0;
+    position: relative;
+    z-index: 100; /*Force le texte a s'afficher en dessus dun overlay*/
+}
  
 h2{
     height: 50%;
